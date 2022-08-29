@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Task</title>
+    <style>
+        body {
+            background-color: rgb(62, 62, 62);
+            color: rgb(216, 216, 216);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            background-color: rgb(40, 40, 40);
+            grid-gap: 15px;
+            padding: 15px;
+            margin: 5px;
+            border: solid 1px;
+        }
+
+        span {
+            color: gold;
+        }
+
+        @media (max-width: 950px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <p>Exercise 1:
+            <br>
+            Make an array of numbers that are doubles of the first array
+            Test Case:
+            console.log(doubleNumbers([2, 5, 100]));
+            Result:
+            [4, 10, 200]
+        </p>
+
+
+
+        
+        <p> Exercise 2 :
+            <br>
+            Take an array of numbers and make them strings
+
+            Test Case:
+
+            console.log(stringItUp([2, 5, 100]));
+
+            Result:
+            ["2", "5", "100"]
+        </p>
+
+
+        
+        <p>Exercise 3:
+            <br>
+            Capitalize each of an array of names
+
+            Test Case:
+
+            console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+            <br>
+            Result:
+            ["John", "Jacob", "Jingleheimer", "Schmidt"]
+        </p>
+
+        
+        <p>Exercise 4:
+            <br>
+            Make an array of strings of the names
+            Test Case:
+            <br>
+            console.log(namesOnly([
+            {name: "Angelina Jolie", age: 80}, <br>
+            {name: "Eric Jones", age: 2}, <br>
+            {name: "Paris Hilton", age: 5}, <br>
+            {name: "Kayne West", age: 16}, <br>
+            {name: "Bob Ziroll", age: 100} <br>
+            ]));
+            <br>
+            Result:
+            ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]</p>
+
+
+    </div>
+    <script src="Js_map.js"></script>
+</body>
